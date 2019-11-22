@@ -29,7 +29,6 @@ function run(page) {
     .catch((error) => {
     console.error(error);
     });
-  window.scrollTo(0,document.body.scrollHeight);
 }
 
 function next_page(this_page) {
