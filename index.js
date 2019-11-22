@@ -19,12 +19,17 @@ function run(page) {
             document.getElementById('page').innerHTML = '<button onclick="return next_page(' + page + ')">Следующая страница</button>' +
             '<div> ' + page + '</div>' +
             '<button onclick="return prev_page(' + page + ')">Предыдущая страница</button>';
+        
+            if (i == responseJson.length - 1) {
+                return rendering();
+            }
         }
         
     })
     .catch((error) => {
     console.error(error);
     });
+  
 }
 
 function next_page(this_page) {
@@ -57,8 +62,19 @@ block.innerHTML = '<div class="head_fullPhoto"> Full Page Photo </div>' +
  '<div class="body_fullPhoto"><img src="' + src + '"></div>' +
  '<button onclick="document.getElementById(\'full_photo\').remove()">Закрыть</button>';
 document.body.appendChild(block)
-console.log(src)
 }
 
 run(page);
+
+function rendering() {
+    function fors() {
+        for(i=0; i<document.getElementsByClassName('block').length; i++) {
+            document.getElementsByClassName('block')[i].style.height = document.getElementsByClassName('block')[i].clientWidth + 'px'
+        }
+    }
+    fors();
+    window.addEventListener("resize", function() {
+    return fors();
+})
+}
 // onclick="return next_page()"

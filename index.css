@@ -4,13 +4,13 @@ body {
 }
 
 div#menu {
-    color: #d3efff;
+    color: #e7e7e7;
     font-weight: 900;
     font-family: cursive;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-align: center;
     font-size: 20px;
-    border-bottom: 2px solid #92bed7;
+    border-bottom: 2px solid #686868;
     padding: 10px;
     background-color: #343434;
 }
@@ -41,27 +41,26 @@ div#menu {
 img.images:hover {
     opacity: 0.8;
     cursor: pointer;
-    outline: 2px solid #9fc9e1;
+    outline: 2px solid #686868;
 }
 
 div#page div {
-    background-color: #83a5b8;
+    background-color: #bababa;
     vertical-align: middle;
     border-radius: 65px;
     margin-right: 10px;
     padding: 10px 15px;
-    border: 2px solid #cbe7f7;
+    border: 2px solid #686868;
 }
 
 .block {
-    background-color: #fff;
-    outline: 2px solid #92bed7;
-    position: relative;
-    width: 13.66%;
-    height: 220px;
-    margin: 0.3%;
-    text-align: center;
+    height: auto;
+    width: 19%;
+    margin: 0.5%;
+    box-sizing: border-box;
+    outline: 2px solid #4f4f4f;
 }
+
 
 div#page button {
     font-weight: 600;
@@ -69,81 +68,26 @@ div#page button {
     padding: 5px 15px;
     border-radius: 15px;
     font-family: cursive;
-    border: 2px solid #cbe7f7;
-    background-color: #83a5b8;
+    border: 2px solid #686868;
+    background-color: #bababa;
     cursor: pointer;
 }
 div#page {
     display: flex;
     padding: 15px 15px;
     background-color: #333;
-    border-top: 1px solid #92bed7;
+    border-top: 1px solid #686868;
 }
 
 div#inner {
-    background-color: #202020;
-    padding: 10px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    overflow: hidden;
-    display: flex;  
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5%;
 }
 
-    /* MIN */
-
-  @media screen and (min-width: 1500px) {
-    .block {
-      height: 250px;
-    }
+  #inner:after {
+    content: "";
+    flex: auto;
   }
 
-    @media screen and (min-width: 1800px) {
-    .block {
-      height: 300px;
-    }
-  }
-
-    /* MAX */
-  
-  @media screen and (max-width: 1500px) {
-    .block {
-      height: 200px;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    .block {
-      height: 190px;
-      outline: 0.5px solid #92bed7;
-    }
-  }
-
-  @media screen and (max-width: 1100px) {
-    .block {
-      height: 160px;
-    }
-  }
-
-  @media screen and (max-width: 1000px) {
-    .block {
-      height: 140px;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .block {
-      height: 110px;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .block {
-      height: 90px;
-    }
-  }
-
-    @media screen and (max-width: 600px) {
-    .block {
-      height: 50px;
-    }
-  }
