@@ -33,11 +33,13 @@ function run(page) {
 }
 
 function next_page(this_page) {
+window.scrollTo(0,document.body.scrollHeight);
 return run(this_page + 1);
 }
 
 function prev_page(this_page) {
 this_page <= 0 ? this_page = 1 : this_page = this_page
+window.scrollTo(0,document.body.scrollHeight);
 return run(this_page - 1);
 }
 
