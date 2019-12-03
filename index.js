@@ -41,26 +41,26 @@ return run(this_page - 1);
 }
 
 function full_image(src) {
-if (document.getElementById('full_photo') != null) {
-    document.getElementById('full_photo').remove();
-}
-let block = document.createElement('div');
-block.id = 'full_photo'
-block.style.cssText  = 
-    'position: fixed' +
-    'width: 90%;' +
-    'right: 5%;' +
-    'top: 5%;' +
-    'left: 5%;' +
-    'bottom: 5%;' +
-    'position: fixed;' +
-    'background-color: #333;' +
-    'border-radius: 5px;' +
-    'height: 90%;';
-block.innerHTML = '<div class="head_fullPhoto"> Full Page Photo </div>' +
- '<div class="body_fullPhoto"><img src="' + src + '"></div>' +
- '<button onclick="document.getElementById(\'full_photo\').remove()">Закрыть</button>';
-document.body.appendChild(block)
+// if (document.getElementById('full_photo') != null) {
+//     document.getElementById('full_photo').remove();
+// }
+// let block = document.createElement('div');
+// block.id = 'full_photo'
+// block.style.cssText  = 
+//     'position: fixed' +
+//     'width: 90%;' +
+//     'right: 5%;' +
+//     'top: 5%;' +
+//     'left: 5%;' +
+//     'bottom: 5%;' +
+//     'position: fixed;' +
+//     'background-color: #333;' +
+//     'border-radius: 5px;' +
+//     'height: 90%;';
+// block.innerHTML = '<div class="head_fullPhoto"> Full Page Photo </div>' +
+//  '<div class="body_fullPhoto"><img src="' + src + '"></div>' +
+//  '<button onclick="document.getElementById(\'full_photo\').remove()">Закрыть</button>';
+// document.body.appendChild(block)
 }
 
 run(page);
