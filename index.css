@@ -91,3 +91,9 @@ div#inner {
     flex: auto;
   }
 
+@media screen and (max-width: 900px) {
+   div#page button {
+       font-size: 8px;
+   }
+}
+
