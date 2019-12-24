@@ -111,5 +111,9 @@ div#inner {
         margin-bottom: 5px;
         /* vertical-align: middle !important; */
     }
+   
+   .block {
+    width: 32.3%;
+   }
 }
 
