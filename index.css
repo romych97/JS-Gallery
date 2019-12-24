@@ -73,6 +73,7 @@ div#page button {
     cursor: pointer;
 }
 div#page {
+    flex-wrap: wrap;
     display: flex;
     padding: 15px 15px;
     background-color: #333;
@@ -92,8 +93,23 @@ div#inner {
   }
 
 @media screen and (max-width: 900px) {
-   div#page button {
-       font-size: 8px;
+   div#page div {
+       width: 100%;
+       text-align: center !important;
+       padding: 2px;
    }
+   
+   div#page button {
+       width: 100%;
+    }
+
+    div#page button:nth-child(3) {
+        margin-top: 5px;
+    }
+
+    div#page button:nth-child(1) {
+        margin-bottom: 5px;
+        /* vertical-align: middle !important; */
+    }
 }
 
